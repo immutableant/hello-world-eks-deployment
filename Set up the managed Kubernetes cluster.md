@@ -1,0 +1,40 @@
+Set up the managed Kubernetes cluster:
+
+Choose a cloud provider like Google Cloud, AWS, or Azure to create a managed Kubernetes cluster.
+Configure the kubectl command-line tool to connect to your cluster.
+
+Write the Kubernetes manifests:
+
+Write a Kubernetes Deployment manifest for the web application, specifying the Docker image created earlier.
+Write a Kubernetes Service manifest to expose the web application to the internet.
+
+Set up Terraform:
+
+Write a Terraform configuration to create and manage the Kubernetes resources.
+Test the Terraform configuration locally by creating and destroying the Kubernetes resources.
+
+Set up CI/CD:
+
+Choose a CI/CD tool like Jenkins, GitLab CI/CD, or GitHub Actions.
+Create a pipeline that automates the following steps:
+a. Build and push the Docker image to a container registry.
+b. Deploy the Kubernetes resources using Terraform.
+
+Trigger the pipeline:
+
+Make a small change to the web application code, commit it, and push it to the remote repository.
+Observe the pipeline executing the build, push, and deploy steps.
+
+
+ aws sts decode-authorization-message --encoded-message cigTannZxbgh8wbImqDQf_1yj0KIWMaYExIVVJKbapJvBWPe4epQYshC_f8NlLys3zPEpBzk77duWTRWnSNyyE_Ty86rKigkYw7Lg1rBewc8RDj3ifPImCm4Xd6vUZmdr5PikwFBrHDX2yhvj7y909AquC92mzPBE9v1eY03mwR6v8--oGyJCtGq8bkeVgdo0TLMauAikKIRwhJw5xNbYtYAwiStY--1HFWJMdR521_sRT_2ieCwDiCAHXk7O06fq3bu78ou6F75AZ5kK4N4k-Zqo4igF-MypllrRkzoFt3Yh13KW18-EBGwt-Vs9YtMgkjIb01ebjrpF5cc2Ofdq5x2XpYUWARx9kpiEF81VD1xytlDg1M5ECcCzs7cPMKdnCjlyW4MT4Ggl96vam3hoYeUoIUGvr65YdSRpFo4w6PIlny-JDuUDivFhzSExoGaKDKlS7STOn5hBUq3vqhc4hgmR4ftfE8dW7GHMFXlxN_bXBNl7RrmpnwY0Tyoxg
+
+ aws sts decode-authorization-message --encoded-message lQIpohkP1uRNhVF0WeV5SD9Hy-nC4IxEsg-SbY9idiGSG77sdGBZWdVO-syGen0dEPImo4h9UtfhJJqi4kgkvCemjLd4NGyTFLHwud865aG41nhkoPSI4wSaIPcpVzpfSLtA4T0R6UkheTlIA2pPEKK0JhbNr1TAYakmyIgAhLVj2yPcPWT246CF-q1BGb0UgCvbSuljWdwpl6VQemZwM4embVJqlOdqnSI5Ei8FGQAJIuOtpJYsiKAesLhgyOLbq2JZSmVM5lZOlM6amYoPMqKjLb4Zj6XaUY0YrVvACpuycI4TWi0UhU71jSvQWLai9MyJiz6Sjjnx5axw4vRPzPCV4PfN7MCv0jYsucJEnBkbr-ULrbcQThHo6SHGn77QJsQV1iLJ_IQEekV6AA1w7QBcaHhvzHyQSHGjbWOyKXFCuDwBwokIaPCt_GYsdPsL8DKMFQyt2cwagv1rIe9FvifcP-BCbl_PNN9CsHeaCiWbfYuaDpWiEp8jfsGzTcgejZwPLn3oP10hRXnLHczAVv6bBNh4IwaT8KbMSfXq60DZME6n0zVYFFInIbLD_UiWjh8--nrjFJIgnvo_CL2iBLt9cTJzkCWoayBNTUwU_2UizEHpv7WEJ-S-PyOmz8pHNYne-CiIhTXP_nkUoxzlDAwGVkg9i3nIUmBk0A3_3BSugmS705aayPz-B-2RNiQyxx4yRs4o83RlU6etqKql2iYhoPv7azol34YTE2Uj-bI6PtYh01JQvyXtl4gz6MquoKpnyw6hppx6IRwfaBmLTCzjbTMrAC08t0SJ122KPny_DaiMWYLHMFz77bZiEC570wVH_ywOPQ-5j5CvdWgap13uXsOJ0iVRDK0slVt7vZJ6QUhrzWVyiSNFhIZOaSQEPhp0Rj9hs03XI14AMb3LUP11fg
+
+
+aws sts decode-authorization-message --encoded-message nXVNa3yqjjIFW8gtOV7vHdZhprJal-iiIL4WQM_0TMrQBnCXNkrdDdTQX-TDNOm1xCULD3jcSileSE2aBHpPcIPiHrjQTmztTdYwSxw9Q53l0FF0gWo6vSbGqPkpOVffIvqxTxHAOrBKOdrilr-iL-zb2tUMYTU6paLtkNobNCUetcEH_youurgNTiC02l7V5OcUl3jT0Zxn8m27nOe6v_uPM-5FV5gH8JZwqxCkIq62HREacAgsiFrm3jDHgoOKPI2MNH5Xt7THXNU5dZTEYLN0aAjaz3IJ4wtZyDl18lg5S_E5EeoGJDlVyYFCCrlgfqaGJw-7o74ck1vYAAgMBq6TVsL8iRjdlkvNaOOhPNdkS_t8DEP16l_XQUJgtbAFYj5r4axHaM_9YgYRVsIdiEaMBzXuaZ6HkfqSSfhQvHPQ6pTtgDQ7SqNMY6svUUtEPYktFIm0lEX6-gHkF6HI6smPJIqPZiNqGbsXC8Q1s9LoWzOtE8Geg3-aA7jkSddtFkR3w19t5iBtp1JHhA
+
+
+
+ec2:CreateVpc
+ec2:ReleaseAddress
+ec2:CreateInternetGateway
